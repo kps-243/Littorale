@@ -4,7 +4,7 @@
 html, body {
     font-family: "Poppins", sans-serif;/*Police globale du site*/
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    
 }
 
 /*Police Générale*/
@@ -169,7 +169,6 @@ nav ul {
 }
 
 nav ul li {
-    float: left;/*Alignement à gauche*/
     display: inline-block;/*Alignement sur la ligne*/
     background: #F9F9F9;/*Couleur du background*/
     margin: 0 5px;/*Taille des marges sur deux côtés de 0 et 5px*/
@@ -739,7 +738,6 @@ nav ul ul li {
     padding-bottom: 10px;/*Espace supplémentaire en bas (10px)*/
     text-align: center;/*Texte centré*/
     color: white;/*Couleur blanche*/
-    font-color: #ffffff;/*Couleur de la police*/
 }
 
 .footer p {
@@ -1648,7 +1646,7 @@ nav ul ul li {
 }
 
 .list-group .list-group-item .row-picture,.list-group .list-group-item .row-action-primary {
-    float: left;/*Alignement à gauche*/
+    
     display: inline-block;/*Type d'affichage*/
     padding-right: 16px;/*Espace supplémentaire gauche 16px*/
     padding-top: 8px;/*Espace supplémentaire haut 8px*/
@@ -1832,7 +1830,7 @@ nav ul ul li {
     -webkit-transform-style: preserve-3d;
     -ms-transition: 1s;
     -moz-transition: 1s;
-    -moz-transform: perspective(1000px);
+    transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transition: 1s;/*Transition 1s*/
@@ -1842,8 +1840,6 @@ nav ul ul li {
 
 .frontside {
     position: relative;/*Position relative*/
-    -webkit-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
     z-index: 2;/*Z 2*/
     margin-bottom: 30px;/*Taille bas 30px*/
 }
