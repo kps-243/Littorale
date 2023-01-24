@@ -1,0 +1,1958 @@
+/* Début CSS */
+
+/* Config.Générale */
+html, body {
+    font-family: "Poppins", sans-serif;/*Police globale du site*/
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+/*Police Générale*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;/*Police en gras*/
+    text-transform: uppercase;/*Texte en majuscule*/
+}
+
+h2, .h2 {
+    font-size: 24px;/*Taille de la police*/
+}
+
+h3, .h3 {
+    font-size: 16px;/*Taille de la police*/
+    font-weight: 600;/*Police en gras*/
+}
+
+h5, .h5 {
+    font-size: 14px;/*Taille de la police*/
+    font-weight: 600;/*Police en gras*/
+}
+
+#text {
+    color: white;/*Couleur blanche*/
+    text-align: center;/*Texte centré*/
+    text-transform: uppercase;/*Texte en majuscule*/
+    font-weight: 700;/*Police en gras*/
+}
+
+/* Texte en justifié (v1) */
+
+.texte {
+    text-align: justify;/*Texte justifié*/
+}
+
+/* Fin Texte en justifié (v1) */
+
+/* Texte en majuscule */
+
+.upper {
+    text-transform: uppercase;/*Texte en majuscule*/
+    font-weight: 600;/*Police en gras*/
+    list-style: none;/*Pas de puces*/
+}
+
+/* Fin Texte en majuscule */
+
+/* Texte en justifié (v2) */
+
+.justifie {
+    text-align: justify;/*Texte justifié*/
+    padding-top: 10px;/*Espacement supplémentaire haut de 10px*/
+}
+
+/* Fin Texte en justifié (v2) */
+
+p {
+    font-size: 16px;/*Taille de la police*/
+    font-weight: 400;/*Police en gras*/
+}
+
+/*Fin Police Générale*/
+
+/*Config. image générale*/
+
+img {
+    max-width: 100%;/*Taille de 100% pour l'image*/
+    vertical-align: top;/*Alignement vertical (haut)*/
+    object-fit: cover;
+}
+
+.img-tel {
+    border: 5px solid white;/*Bordure de 5px en blanc pour les images*/
+}
+
+.img-fluid {
+    max-width: 100%;/*Taille maximale*/
+    height: auto;/*Taille maximale (Automatique)*/
+    border-radius: 5px;
+}
+
+.img-accueil {
+    max-width: 100%;/*Taille en longueur (100%)*/
+    height: 461px;/*Taille maximale en hauteur (450px)*/
+    border-radius: 5px;
+}
+
+.image-limit {
+    width: 190px;/*Taille en longueur (190px)*/
+}
+
+.img-morgan{
+    object-position: 0 -20px;
+}
+
+/*Fin Config. image générale*/
+
+input:focus, select:focus, button:focus, textarea:focus {
+    outline: none;/*Concerne la bordure*/
+}
+
+a {
+    color: black;/*Couleur noire pour les a*/
+}
+
+a:hover, a:focus {
+    text-decoration: none;/*Pas de soulignement*/
+    outline: none;/*Concerne la bordure*/
+    transition: 0.4s;/*Transition de 0.4s*/
+}
+
+article {
+    padding: 20px;/*Espace de 20px dans article*/
+    text-align: justify;/*Texte justifié*/
+    max-width: 914px;/*Taille maximale en longueur (914px)*/
+    margin-left: auto;/*Alignement au milieu*/
+    margin-right: auto;/*Alignement au milieu*/
+}
+
+.over {
+    width: 914px;/*Taille en longueur (914px)*/
+    height: 500px;/*Taille maximale en hauteur (500px)*/
+    overflow: auto;/*Overflow*/
+    padding: 0px 5px 0px 0px;/*Espace supplémentaire de 5px à droite*/
+}
+
+.background {
+    background-repeat: no-repeat;/*Pas de répétition du background*/
+    background-size: cover;/*Couverture complète*/
+    background-position: top center;/*Background centré*/
+}
+
+/* Fin Config.Générale */
+
+/* Header */
+.logo {
+    margin-top: 25px;/*Taille des marges sur les quatres côtés de 25px*/
+    float: left;/*Alignement à gauche*/
+}
+
+nav {
+    background: #F9F9F9;/*Couleur du background nav*/
+}
+
+nav:after {
+    content: '';/*Génération du menu*/
+    clear: both;/*Effacement après l'ouverture du menu*/
+    display: table;/*Type d'affichage*/
+}
+
+nav .logo {
+    float: left;/*Alignement à gauche*/
+    color: black;/*Couleur noire*/
+    line-height: 60px;/*Hauteur de la boite de ligne (60px)*/
+    padding-left: 25px;/*Espace supplémentaire à gauche(25px en haut)*/
+}
+
+nav ul {
+    float: right;/*Alignement à droite*/
+    list-style: none;/*Pas de puces*/
+}
+
+nav ul li {
+    float: left;/*Alignement à gauche*/
+    display: inline-block;/*Alignement sur la ligne*/
+    background: #F9F9F9;/*Couleur du background*/
+    margin: 0 5px;/*Taille des marges sur deux côtés de 0 et 5px*/
+}
+
+nav ul li a {
+    color: black;/*Couleur noire*/
+    line-height: 85px;/*Hauteur de la boite de ligne (85px)*/
+    text-decoration: none;/*Pas de décoration pour le texte*/
+    font-size: 18px;/*Taille de la police*/
+    font-weight: 600;/*Police en gras*/
+    padding: 8px 15px;/*Espace supplémentaire(8px et 15px)*/
+}
+
+nav ul li a:hover {
+    color: #4F646F;/*Couleur du a*/
+}
+
+nav ul ul li a:hover {
+    box-shadow: none;/*Pas d'ombres*/
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;/*Positionnement de l"élément en haut (90px)*/
+    border-top: 3px solid black;/*Bordure du haut*/
+    opacity: 0;/*Opacité de 0*/
+    visibility: hidden;/*Pas de visiblité*/
+    transition: top .3s;/*Transition de .3s en haut*/
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul li:hover > ul {
+    top: 70px;/*Positionnement de l"élément en haut (70px)*/
+    opacity: 1;/*Opacité de 1*/
+    visibility: visible;/*Visible*/
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;/*Marge des quatres côtés (0px)*/
+    width: auto;/*Longueur de 150px*/
+    float: none;/*Pas d'alignement*/
+    display: list-item;/*Affichage */
+    border-bottom: 1px solid black;/*Bordure de 1px solide noire*/
+}
+
+nav ul ul li a {
+    line-height: 50px;/*Hauteur de la boite de ligne (50px)*/
+}
+
+nav ul ul ul li {
+    position: relative;/*Position relative*/
+    top: -60px;/*Positionnement de l"élément en haut (-60px)*/
+    left: 150px;/*Positionnement de l"élément à droite (150px)*/
+}
+
+.show, .icon, input {
+    display: none;/*Pas d'affichage*/
+}
+
+/* Adaptation du menu pour tous supports */
+
+@media all and (max-width: 968px) {
+
+nav .logo {
+    padding-left: 20px;/*Espace supplémentaire à gauche (20px)*/
+}
+
+.show + a, ul {
+    display: none;/*Pas d'affichage*/
+}
+
+nav ul li, nav ul ul li {
+    display: block;/*Type d'affichage*/
+    width: 100%;/*Taille de 100%*/
+}
+
+nav ul li a:hover {
+    box-shadow: none;/*Pas d'ombre*/
+}
+
+nav ul li a {
+    padding: 0px 0px;/*Espace supplémentaire de (0px)*/
+}
+
+.show {
+    display: block;/*Type d'affichage*/
+    color: black;/*Couleur noire*/
+    font-size: 18px;/*Taille de la police*/
+    font-weight: 600;/*Texte en gras*/
+    line-height: 70px;/*Hauteur de la boite de ligne (70px)*/
+    cursor: pointer;/*Curseur pointeur*/
+}
+
+.show:hover {
+    color: #F1F1F1;/*Couleur*/
+}
+
+.icon {
+    display: block;/*Type d'affichage*/
+    color: black;/*Couleur noire*/
+    position: absolute;/*Position de l'élement (absolu)*/
+    top: 0;/*Positionnement de l"élément en haut (0px)*/
+    right: 15px;/*Positionnement de l"élément à droite (15px)*/
+    line-height: 90px;/*Hauteur de la boite de ligne (90px)*/
+    cursor: pointer;/*Curseur pointeur*/
+    font-size: 25px;/*Taille de la police*/
+}
+
+nav ul ul {
+    top: 70px;/*Positionnement de l"élément en haut (70px)*/
+    border-top: 0px;/*Bordure en haut (0px)*/
+    float: none;/*Pas de float*/
+    position: static;/*Position statique*/
+    display: none;/*Pas d'affichage*/
+    opacity: 1;/*Opacité de 1*/
+    visibility: visible;/*Visiblité*/
+}
+
+nav ul ul a {
+    padding-left: 40px;/*Espace supplémentaire à gauche (40px)*/
+}
+
+nav ul ul ul a {
+    padding-left: 80px;/*Espace supplémentaire à gauche (80px)*/
+}
+
+nav ul ul ul li {
+    position: static;/*Position statique*/
+}
+
+[id^=btn]:checked + ul {
+    display: block;/*Type d'affichage*/
+}
+
+nav ul ul li {
+    border-bottom: 0px;/*Bordure en bas (0px)*/
+}
+
+}
+
+/* Fin Header */
+
+/* Page Principale */
+
+.principale-section {
+    height: 1200px;/*Hauteur de 840px*/
+    overflow: hidden;/*Overflow*/
+}
+
+.deuxieme-section {
+    height: auto;/*Hauteur de 840px*/
+    padding-top: 150px;
+    padding-bottom: 150px;
+    overflow: hidden;/*Overflow*/
+    padding: 20px;/*Espace supplémentaire de 20px*/
+    background-color: #e6e7e8;/*Couleur du background*/
+}
+
+.texte-deuxieme-section{
+    padding-top: 50px;/*Espacement supplémentaire haut de 50px*/
+    padding-bottom: 50px;/*Espacement supplémentaire bas de 50px*/
+}
+
+/* Page A Propos */
+
+.principale-propos-section {
+    height: 400px; /*Hauteur de 840px*/
+    width: 100%;/*Taille de 100%*/
+    overflow: hidden;/*Overflow*/
+}
+
+.principale-propos-section .container {
+    margin: auto;/*Taille Auto*/
+    margin-top: 160px;/*Taille Haut 160px*/
+}
+
+/* Fin A Propos */
+
+/* Page Articles */
+
+.articles-pages-section {
+    height: 350px;/*Hauteur de 840px*/
+    overflow: hidden;/*Overflow*/
+}
+
+.articles-pages-section .container {
+    margin: auto;/*Taille Auto*/
+    margin-top: 160px;/*Taille Haut 160px*/
+}
+
+.articles-pages-texte h4 {
+    font-weight: 700;/*Texte en gras*/
+    margin-top: 11px;/*Taille Haut 11px*/
+    color: #ffffff;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré au centre*/
+}
+
+.articles-section {
+    height: auto;/*Hauteur Automatique*/
+}
+
+/* Fin Page Articles */
+
+.test-section {
+    height: 450px;/*Hauteur de 840px*/
+    width: 100%;/*Taille de 100%*/
+    overflow: hidden;/*Overflow*/
+}
+
+.principale-second-section {
+    height: auto;/*Hauteur de 840px*/
+    padding-top: 50px;/*Espacement supplémentaire haut de 50px*/
+    padding-bottom: 50px;/*Espacement supplémentaire bas de 50px*/
+    position: relative;/*Position Relative*/
+    background-color: #F5FAFD;/*Couleur du background*/
+    width: 100%;/*Taille de 100%*/
+    overflow: hidden;/*Overflow*/
+    color: black;/*Couleur noire*/
+}
+
+.second-texte h3 {
+    font-weight: 700;/*Texte en gras*/
+    color: #333;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré au centre*/
+    font-size: 60px;/*Taille de la police*/
+}
+
+.second-texte h4 {
+    font-weight: 700;/*Texte en gras*/
+    margin-top: 11px;/*Espacement supplémentaire haut de 11px*/
+    color: #333;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré au centre*/
+}
+
+.principale-texte h3 {
+    font-weight: 700;/*Texte en gras*/
+    color: white;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré au centre*/
+    font-size: 60px;
+}
+
+.principale-texte h4 {
+    font-weight: 700;/*Texte en gras*/
+    margin-top: 11px;/*Espacement supplémentaire haut de 11px*/
+    color: white;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré au centre*/
+}
+
+.principale-texte p {
+    padding: 20px;/*Espacement supplémentaire sur les quatres côtés (20px)*/
+    margin: 20px;/*Taille de 20px*/
+    border-width: 1px;/*Taille de la bordure*/
+    border-style: solid;/*Bordure solide*/
+    border-color: white;/*Couleur de la bordure*/
+    color: white;/*Couleur blanche du texte*/
+    text-align: justify;/*Texte justifié*/
+}
+
+.principale-troisieme-texte h3 {
+    font-weight: 700;/*Texte en gras*/
+    color: black;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré au centre*/
+    font-size: 60px;/*Taille de la police*/
+}
+
+.principale-troisieme-texte h4 {
+    font-weight: 700;/*Texte en gras*/
+    margin-top: 11px;/*Taille haut de 11px*/
+    color: white;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré au centre*/
+}
+
+.principale-troisieme-texte p {
+    padding: 20px;/*Espacement supplémentaire sur les quatres côtés (20px)*/
+    margin: 20px;/*Taille de 20px*/
+    border-width: 1px;/*Taille de la bordure*/
+    border-style: solid;/*Bordure solide*/
+    border-color: white;/*Couleur de la bordure*/
+    color: white;/*Couleur blanche du texte*/
+    text-align: justify;/*Texte justifié*/
+}
+
+.principale-article-texte h3 {
+    font-weight: 700;/*Texte en gras*/
+    color: black;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré au centre*/
+    font-size: 30px;
+}
+
+.principale-article-texte h4 {
+    font-weight: 700;/*Texte en gras*/
+    margin-top: 11px;
+    color: white;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré au centre*/
+}
+
+.principale-article-texte p {
+    padding: 20px;/*Espacement supplémentaire sur les quatres côtés (20px)*/
+    margin: 20px;
+    border-width: 1px;/*Taille de la bordure*/
+    border-style: solid;/*Bordure solide*/
+    border-color: white;/*Couleur de la bordure*/
+    color: white;/*Couleur blanche du texte*/
+    text-align: justify;/*Texte justifié*/
+}
+
+.page-article {
+    padding-top: 56px;/*Espacement supplémentaire haut (56px)*/
+}
+
+.over {
+    width: auto;/*Longueur auto*/
+}
+
+/* Page Contact */
+.form-section {
+    height: 990px;/*Hauteur automatique*/
+    padding-top: 100px;/*Espacement supplémentaire haut de 100px*/
+}
+
+.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;/*Pas d'ombre*/
+    background: transparent;/*Background transparent*/
+    border: 2px solid rgba(0, 0, 0, 0.1);/*Bordure de 2px solide*/
+    height: 54px;/*Hauteur de 54px*/
+    font-size: 18px;/*Taille de la police*/
+    color: white;/*Couleur blanche*/
+    font-weight: 300;/*Texte en gras*/
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    border-radius: 0px;/*Pas d'arrondi*/
+}
+
+#message {
+    height: 130px;/*Hauteur de 130px*/
+}
+
+.btn.btn-md {
+    padding: 10px 25px;/*Espacement supplémentaire de 10px et 25px*/
+}
+
+.btn-primary {
+    background: #080808;/*Couleur du background*/
+    color: #fff;/*Couleur blanche*/
+    border: 2px solid #080808;/*Bordure de 2px solide avec la couleur*/
+}
+
+.btn-primary:hover {
+    background-color: #080808;/*Couleur du background*/
+    border-color: #080808;/*Couleur de la bordure*/
+}
+
+/* Fin Page Contact */
+
+/* Partie Responsive */
+
+@media only screen and (min-width: 1200px) {
+
+.container {
+    max-width: 1170px;/*Longueur maximale du container 1170px*/
+}
+
+}
+
+/* Taille maximale: 1200px */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+.footer-banner-item:after {
+    width: 450px;/*Longueur de 450px*/
+    -webkit-transform: translate(-225px, -155px);
+    -ms-transform: translate(-225px, -155px);
+    transform: translate(-225px, -155px);
+}
+
+}
+
+/* Large Mobile: 480px */
+
+@media only screen and (max-width: 767px) {
+
+/* Config. générale sur téléphone */
+
+.principale-texte h3 {
+    font-size: 20px;/*Taille de la police*/
+}
+
+.principale-texte h4 {
+    font-size: 13px;/*Taille de la police*/
+}
+
+.principale-texte p {
+    font-size: 10px;/*Taille de la police*/
+}
+
+.principale-troisieme-texte h3 {
+    font-size: 20px;/*Taille de la police*/
+}
+
+.principale-troisieme-texte h4 {
+    font-size: 13px;/*Taille de la police*/
+}
+
+.principale-troisieme-texte p {
+    font-size: 10px;/*Taille de la police*/
+}
+
+.article-telephone {
+    text-align: center;/*Texte centré*/
+}
+
+.img-tel {
+    max-width: 100%;/*Taille maximale (100%)*/
+    display: block;
+    margin-left: auto;/*Alignement au milieu*/
+    margin-right: auto;/*Alignement au milieu*/
+}
+
+.img-box {
+    box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+    border-radius: 2px;
+    border: 0;
+    height: 225px;
+    margin-bottom: 20px;
+}
+
+/* Fin Config. générale sur téléphone */
+
+/* Page Erreur */
+
+.error-template {
+    padding: 40px 0px;
+    text-align: center;/*Texte centré*/
+}
+
+/* Fin Page Erreur */
+
+/* Page Principale */
+.principale-section {
+    height: 1250px;/*Hauteur de 1250px*/
+    padding-top: 75px;/*Espacement supplémentaire haut de 75px*/
+}
+
+/* Page Formulaire */
+.form-section {
+    height: 600px;/*Hauteur de 600px*/
+    padding-top: 75px;/*Espacement supplémentaire haut de 75px*/
+}
+
+/* Fin Page Formulaire */
+
+/* Footer Mobile*/
+.footer-banner-item:after {
+    width: 450px;/*Longueur de 450px*/
+    -webkit-transform: translate(-225px, -155px);
+    -ms-transform: translate(-225px, -155px);
+    transform: translate(-225px, -155px);
+}
+
+/* Fin Footer Mobile*/
+
+}
+
+/* Fin Large Mobile: 480px */
+
+/* Taille maximale : 320px */
+
+@media only screen and (max-width: 479px) {
+
+.principale-texte h3 {
+    font-size: 24px;/*Taille de la police*/
+}
+
+.principale-texte h4 {
+    font-size: 15px;/*Taille de la police*/
+}
+
+.principale-troisieme-texte h3 {
+    font-size: 24px;/*Taille de la police*/
+}
+
+.principale-troisieme-texte h4 {
+    font-size: 13px;/*Taille de la police*/
+}
+
+.principale-troisieme-texte p {
+    font-size: 10px;/*Taille de la police*/
+}
+
+.img-box {
+    box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+    border-radius: 2px;/*Bordure de 2px*/
+    border: 0;/*Bordure 0*/
+    height: 225px;/*Hauteur de 225px*/
+    margin-bottom: 20px;/*Taille bas de 20px*/
+}
+
+/*Footer Mobile*/
+
+.footer-banner-item:after {
+    width: 300px;/*Longueur de 300px*/
+    -webkit-transform: translate(-150px, -155px);
+    -ms-transform: translate(-150px, -155px);
+    transform: translate(-150px, -155px);
+}
+
+.footer-banner-item {
+    padding-top: 28px;/*Espace supplémentaire en haut (28px)*/
+}
+
+/*Fin Footer mobile*/
+
+.content-wrapper .banner-content {
+    position: absolute;
+    padding: 10px 10px !important;/*(Important pour avoir la priorité par rapport au bootstrap)*/
+    left: 0px;/*Gauche 0*/
+    bottom: 0px;/* Bas 0*/
+    color: #ffffff;/*Couleur Blanche*/
+}
+
+.article-telephone {
+    text-align: center;/*Texte centré*/
+}
+
+.barre-news {
+    margin-bottom: 0;
+    color: white;/*Couleur blanche*/
+    font-size: 18px !important;/*Taille de la police (Important pour avoir la priorité par rapport au bootstrap)*/
+    font-weight: 600;/*Police en gras*/
+}
+
+/* Page Erreur */
+
+.error-template {
+    padding: 40px 0px;/*Espacement supplémentaire 40px 0px*/
+    text-align: center;/*Texte centré*/
+}
+
+/* Fin Page Erreur */
+
+/* Page A propos */
+.a-propos-section .container {
+    margin: auto;/*Taille automatique*/
+    margin-top: 170px;/*Taille haut de 170px*/
+}
+
+/* Fin Page A propos */
+
+}
+
+/* Fin Taille maximale : 320px */
+
+/* Footer */
+
+.footer {
+    background: #0E0E0E;/*Couleur background*/
+    padding-top: 60px;/*Espace supplémentaire en haut (60px)*/
+    padding-bottom: 10px;/*Espace supplémentaire en bas (10px)*/
+    text-align: center;/*Texte centré*/
+    color: white;/*Couleur blanche*/
+    font-color: #ffffff;/*Couleur de la police*/
+}
+
+.footer p {
+    color: white;/*Couleur blanche*/
+    padding: 20px;/*Espace supplémentaire (20px)*/
+}
+
+/* Style des icônes */
+
+.fa {
+    padding: 20px;
+    padding: 20px;/*Espace supplémentaire (20px)*/
+    width: 55px;/*Longueur (55px)*/
+    text-align: center;/*Texte centré*/
+    text-decoration: none;/*Pas de décoration*/
+    color: black;/*Couleur noire*/
+}
+
+/* Ajout de l'opacité au survol des icônes */
+.fa:hover {
+    opacity: 0.7;/*Opacité de (0.7s)*/
+    }
+
+/* Facebook */
+.fa-facebook {
+    background: #080808;/*Couleur background*/
+    color: white;/*Couleur blanche*/
+    border-radius: 50%;/*Arrondi de 50%*/
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #080808;/*Couleur background*/
+    color: white;/*Couleur blanche*/
+    border-radius: 50%;/*Arrondi de 50%*/
+}
+
+/* Instagram */
+.fa-instagram.fa-instagram {
+    background: #080808;/*Couleur background*/
+    color: white;/*Couleur blanche*/
+    border-radius: 50%;/*Arrondi de 50%*/
+}
+
+/* Fin Footer */
+
+/* Bouton revenir en haut */
+
+#button {
+    display: inline-block;/*Type d'affichage*/
+    background-color: black;/*Couleur du background*/
+    width: 50px;/*Longueur 50px*/
+    height: 50px;/*Hauteur 50px*/
+    text-align: center;/*Texte centré*/
+    border-radius: 4px;/*Arrondi 4px*/
+    position: fixed;/*Position fixe*/
+    bottom: 30px;/*Bas 30px*/
+    right: 30px;/*Droite 30px*/
+    transition: background-color .3s,opacity .5s, visibility .5s;
+    opacity: 0;/*Opacité 0*/
+    visibility: hidden;/*Visibilité cachée*/
+    z-index: 1000;/*Z de 1000*/
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;/*Permet d'avoir la flêche*/
+    font-weight: normal;/*Police en gras (normal)*/
+    font-style: normal;/*Style normal*/
+    font-size: 32px;/*Taille de la police*/
+    line-height: 50px;/*Hauteur 50px*/
+    color: white;/*Couleur blanche*/
+}
+
+#button:hover {
+    cursor: pointer;/*Curseur*/
+    background-color: #333;/*Couleur du background*/
+}
+
+#button:active {
+    background-color: #555;/*Couleur du background*/
+}
+
+#button.show {
+    opacity: 1;/*Opacité de 1*/
+    visibility: visible;/*Visibilité active*/
+}
+
+/* Fin Bouton revenir en haut */
+
+/* Partie Actu Articles */
+
+.actu-articles {
+    width: min(1200px, 100%);/*Longueur de 1200px*/
+    padding: 20px;/*Espace supplémentaire de 20px*/
+    display: flex;/*Type d'affichage*/
+    justify-content: space-between;/*Justifié*/
+    flex-wrap: wrap;/*Retour automatique*/
+    cursor: pointer;/*Curseur*/
+}
+
+.articles {
+    width: calc(33% - 10px);/*Longueur 33%*/
+    overflow: hidden;/*Overflow*/
+}
+
+.articles-images {
+    width: 100%;/*Longueur de 100%*/
+    border-radius: 6px;/*Bordure arrondie 6px*/
+    transition: .3s linear;/*Transition de .3s*/
+    height: 250px;/*Hauteur de 250px*/
+    width: 500px;/*Longueur de 500px*/
+}
+
+.articles-contenu {
+    background-color: #e8e8e8;/*Couleur du background*/
+    margin: 0 20px;/*Taille de 0 et 20px*/
+    padding: 30px;/*Espace supplémentaire de 30px*/
+    border-radius: 6px;/*Bordure arrondie de 6px*/
+    transform: translateY(-60px);
+    transition: .3s linear;/*Transition de 0.3*/
+    text-align: center;/*Texte centré*/
+}
+
+.articles-contenu h3 {
+    font-size: 18px;/*Taille de la police*/
+    margin-bottom: 10px;/*Taille bas 10px*/
+    font-weight: 700;/*Police en gras*/
+}
+
+.date {
+    font-size: 15px;/*Taille de la police*/
+    color: black;/*Couleur noire*/
+}
+
+.articles:hover .articles-images {
+    transform: translateY(20px);
+}
+
+.articles:hover .articles-contenu {
+    transform: translateY(-80px);
+}
+
+@media screen and (max-width: 1200px) {
+.actu-articles {
+    justify-content: center;/*Centré*/
+}
+
+.articles {
+    width: min(600px, 100%);/*Longueur minimal 600px*/
+}
+
+}
+
+/* Fin Partie Actu Articles */
+
+.btn {
+    display: inline-block;/*Type d'affichage*/
+    color: #333;/*Couleur*/
+    text-decoration: none;/*Pas de décoration*/
+    border: 1px solid #333;/*Bordure 1px*/
+    padding: 6px 20px;/*Espace supplémentaire 6px et 20px*/
+    transition: .3s linear;/*Transition .3s*/
+}
+
+.btn:hover {
+    color: white;/*Couleur blanche*/
+    background: #333;/*Couleur du background*/
+}
+
+.btn-com {
+    display: inline-block;/*Type d'affichage*/
+    color: white;/*Couleur blanche*/
+    text-decoration: none;/*Pas de décoration*/
+    border: 1px solid #333;/*Bordure de 1px*/
+    padding: 6px 20px;/*Espacement supplémentaire de 6px et 20px*/
+    border-radius: 10px;/*Bordure arrondie 10px*/
+    transition: .3s linear;/*Transition de .3s*/
+    margin-top: 20px;/*Taille haut de 20px*/
+}
+
+.btn-com:hover {
+    color: white;/*Couleur blanche*/
+    background: #333;/*Couleur du background*/
+}
+
+.sources {
+    color: #444;/*Couleur*/
+    cursor: pointer;/*Curseur*/
+    padding: 18px;/*Espacement supplémentaire 18px*/
+    width: 100%;/*Longueur 100%*/
+    border: none;/*Pas de bordure*/
+    text-align: left;/*Texte aligné à gauche*/
+    outline: none;/*Pas d'outline*/
+    font-size: 18px;/*Taille de la police*/
+    font-weight: 700;/*Police en gras*/
+    transition: 0.4s;/*Tranistion 0.4s*/
+}
+
+.active, .sources:hover {
+    background-color: #ccc;/*Couleur du background*/
+}
+
+.sources:after {
+    content: '\002B';/*Content*/
+    color: #777;/*Couleur*/
+    font-weight: bold;/*Police en gras*/
+    float: right;/*Float à droite*/
+    margin-left: 5px;/*Taille gauche de 5px*/
+}
+
+.active:after {
+    content: "\2212";/*Content*/
+}
+
+.panel {
+    padding: 0 18px;/*Espace supplémentaire 0 18px*/
+    background-color: white;/*Couleur du background*/
+    max-height: 0;/*Hauteur maximale de 0*/
+    overflow: hidden;/*Overflow*/
+    transition: max-height 0.2s ease-out;/*Transition 0.2s*/
+}
+
+.blog-listing {
+    padding-top: 30px;/*Espace supplémentaire haut 30px*/
+    padding-bottom: 30px;/*Espace supplémentaire bas 30px*/
+}
+
+.auteur {
+    height: auto;/*Hauteur automatique*/
+    padding-bottom: 50px;/*Espace supplémentaire bas 50px*/
+    position: relative;/*Position relative*/
+}
+
+.auteur h1 {
+    margin: 50px;/*Taille de 50px*/
+    font-weight: 700;/*Police en gras*/
+}
+
+.auteur .card {
+    box-shadow: 0 0 20px #ccc;/*Shadow de 0 0 20px*/
+    text-align: justify;/*Texte justifié*/
+}
+
+.auteur .card img {
+    width: 100%;/*Longueur de 100%*/
+    height: 192px;/*Hauteur de 192px*/
+}
+
+.card-footer {
+    border-top: 0px;/*Bordure haute 0px*/
+    text-align: center;/*Texte centré*/
+    font-weight: 700;/*Police en gras*/
+}
+
+.card-title {
+    margin-bottom: 1200px;/*Taille bas de 1200px*/
+    font-weight: 700;/*Police en gras*/
+    font-size: 20px;/*Taille de la police*/
+    text-align: center;/*Texte centré*/
+}
+
+.card-footer a:hover {
+    color: #4F646F;/*Couleur*/
+}
+
+.auteur .card-body {
+    padding: 16px;/*Espace supplémentaire de 16px*/
+}
+
+/* A propos de moi */
+
+.about-text h3 {
+    font-size: 45px;/*Taillede la police*/
+    font-weight: 700;/*Police en gras*/
+}
+
+@media (max-width: 767px) {
+
+.about-text h3 {
+    font-size: 35px;/*Taille de la police*/
+    padding-top: 30px;/*Espace supplémentaire haut 30px*/
+    text-align: center;/*Texte centré*/
+}
+
+.about-text h6 {
+    font-size: 18px;/*Taille de la police*/
+    text-align: center;/*Texte centré*/
+}
+
+}
+
+.about-text h6 {
+    font-weight: 600;/*Police en gras*/
+    margin-bottom: 15px;/*Taille bas 15px*/
+}
+
+.about-text p {
+    font-size: 18px;/*Taille de la police*/
+    max-width: 450px;/*Longueur maximale 450px*/
+    text-align: justify;/*Texte justifié*/
+}
+
+.about-text p mark {
+    font-weight: 600;/*Police en gras*/
+    color: #20247b;/*Couleur*/
+}
+
+.about-avatar img {
+    border-radius: 50px;/*Bordure arrondie de 50px*/
+    width: 400px;/*longueur de 400px*/
+}
+
+.about-avatar {
+    padding: 50px;/*Espace supplémentaire de 50px*/
+}
+
+.about-list {
+    padding-top: 10px;/*Espace supplémentaire haut 10px*/
+}
+
+.about-list .media {
+    padding: 5px 0;/*Espace supplémentaire de 5px 0*/
+}
+
+.about-list label {
+    color: #20247b;/*Couleur*/
+    font-weight: 600;/*Police en gras*/
+    width: 88px;/*Longueur 88px*/
+    margin: 0;/*Taille de 0*/
+    position: relative;/*Position relative*/
+}
+
+.about-list label:after {
+    content: "";/*Content*/
+    position: absolute;/*Position absolue*/
+    top: 0;/*Gauche 0*/
+    bottom: 0;/*Bas 0*/
+    right: 11px;/*Droite 11px*/
+    width: 1px;/*Longueur 1px*/
+    height: 12px;/*Hauteur 12px*/
+    background: #20247b;/*Couleur du background*/
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    margin: auto;/*Taille Automatique*/
+    opacity: 0.5;/*Opacité*/
+}
+
+.about-list p {
+    margin: 0;/*Taille 0*/
+    font-size: 15px;/*Taille de la police*/
+}
+
+@media (max-width: 991px) {
+
+.about-avatar {
+    margin-top: 30px;/*Taille haut 30px*/
+}
+
+.about {
+    margin-top: 30px;/*Taille haut 30px*/
+}
+
+}
+
+.about-section .counter {
+    padding: 22px 20px;/*Espace supplémentaire 22px 20px*/
+    background: #ffffff;/*Couleur du background*/
+    border-radius: 10px;/*Bordure arrondie 10px*/
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);/*Shadow*/
+}
+
+.about-section .counter .count-data {
+    margin-top: 10px;/*Taille haut 10px*/
+    margin-bottom: 10px;/*Taille bas 10px*/
+}
+
+.about-section .counter .count {
+    font-weight: 700;/*Police en gras*/
+    margin: 0 0 5px;/*Taille 0 0 5px*/
+}
+
+.about-section .counter p {
+    font-weight: 600;/*Police en gras*/
+    margin: 0;/*Taille de 0*/
+}
+
+/* Fin A Propos */
+
+/* Partie principale (Page Articles) */
+
+.blog-grid {
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);/*shadow 30px et couleur*/
+    border-radius: 5px;/*Bordure arrondie 5px*/
+    overflow: hidden;/*Overflow*/
+    background: #ffffff;/*Background blanc*/
+    margin-top: 15px;/*Taille-haut 15px*/
+    margin-bottom: 15px;/*Taille-bas 15px*/
+}
+
+.blog-grid .blog-img {
+    position: relative;/*Position relative*/
+}
+
+.blog-grid .blog-img .date {
+    position: absolute;/*Position absolue*/
+    background: #fc5356;/*Couleur background*/
+    color: #ffffff;/*Couleur blanc*/
+    padding: 8px 15px;/*Espace supplémentaire 8px 15px*/
+    left: 10px;/*Gauche 10px*/
+    top: 10px;/*Haut 10px*/
+    border-radius: 4px;/*Bordure arrondie 4px*/
+}
+
+.blog-grid .blog-img .date span {
+    font-size: 22px;/*Taille de la police 22px*/
+    display: block;/*Type d'affichage*/
+    line-height: 22px;/*Hauteur ligne 22px*/
+    font-weight: 700;/*Police en gras*/
+}
+
+.blog-grid .blog-img .date label {
+    font-size: 14px;/*Taille de la police 14px*/
+    margin: 0;/*Taille 0*/
+ }
+
+.blog-grid .blog-info {
+    padding: 20px;/*espace 20px*/
+}
+
+.blog-grid .blog-info h5 {
+    font-size: 22px;/*Taile de la police*/
+    font-weight: 700;/*Police en gras*/
+    margin: 0 0 10px;/*Taille 0 0 10px*/
+}
+
+.blog-grid .blog-info h5 a {
+    color: #20247b;/*Couleur*/
+}
+
+.blog-grid .blog-info p {
+    margin: 0;/*Taille 0*/
+}
+
+.blog-grid .blog-info .btn-bar {
+    margin-top: 20px;/*Taille haut 20px*/
+}
+
+/* Fin Partie principale (Page Articles) */
+
+/* Partie secondaire (Page Articles) */
+
+.blog-aside .widget {
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);/*Shadow couleur*/
+    border-radius: 5px;/*bordure arrondie 5px*/
+    overflow: hidden;/*Overflow*/
+    background: #ffffff;/*Background blanc*/
+    margin-top: 15px;/*Taille haut 15px*/
+    margin-bottom: 15px;/*Taille bas 15px*/
+    width: 100%;/*longueur 100%*/
+    display: inline-block;/*Type d'affichage*/
+    vertical-align: top;/*Alignement vertical haut*/
+}
+
+.blog-aside .widget-body {
+    padding: 15px;/*Espacement 15px*/
+}
+
+.blog-aside .widget-title {
+    padding: 15px;/*Espacement 15px*/
+    border-bottom: 1px solid #eee;/*Bordure bas 1px*/
+}
+
+.blog-aside .widget-title h3 {
+    font-size: 20px;/*Taille de la police*/
+    font-weight: 700;/*Police en gras*/
+    color: black;/*Couleur noire*/
+    margin: 0;/*Taille 0*/
+}
+
+.blog-aside .widget-author .media {
+    margin-bottom: 15px;/*Taille bas 15px*.
+}
+
+.blog-aside .widget-author p {
+    font-size: 16px;/*Taille de la police 16px*/
+    margin: 0;/*Taille 0*/
+}
+
+.blog-aside .widget-author .avatar {
+    width: 70px;/*Longeur 70px*/
+    height: 70px;/*Hauteur 70px*/
+    border-radius: 50%;/*Bordure aroundie 50%*/
+    overflow: hidden;/*overflow*/
+}
+
+.blog-aside .widget-author h6 {
+    font-weight: 600;/*Police en gras*/
+    color: black;/* Couleur noire*/
+    font-size: 22px;/*Taile de la police 22px*/
+    margin: 0;/*Taille 0*/
+    padding-left: 20px;/*Espacement gauche 20px*/
+}
+
+.blog-aside .post-aside {
+    margin-bottom: 15px;/*Taillebas 15px*/
+}
+
+.blog-aside .post-aside .post-aside-title h5 {
+    margin: 0;/*Taille 0*/
+}
+
+.blog-aside .post-aside .post-aside-title a {
+    font-size: 18px;/*Taille de la police 18px*/
+    color: black;/*Couleur noir*/
+    font-weight: 600;/*Police en gras*/
+}
+
+.blog-aside .post-aside .post-aside-meta {
+    padding-bottom: 10px;/*Espacement bas 10px*/
+}
+
+.blog-aside .post-aside .post-aside-meta a {
+    color: #6F8BA4;
+    font-size: 12px;/*Taille de la police 12px*/
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 10px;/*Taille droite 10px*/
+}
+
+.blog-aside .latest-post-aside + .latest-post-aside {
+    border-top: 1px solid #eee;
+    padding-top: 15px;/*Espacement haut 15px*/
+    margin-top: 15px;/*Margin haut 15px*/
+}
+
+.blog-aside .latest-post-aside .lpa-right {
+    width: 90px;/*Longeur 90px*/
+}
+
+.blog-aside .latest-post-aside .lpa-right img {
+    border-radius: 3px;/*Bordure aroundi 3px*/
+}
+
+.blog-aside .latest-post-aside .lpa-left {
+    padding-right: 15px;/*Espacement supplémentaire droite 15px*/
+}
+
+.blog-aside .latest-post-aside .lpa-title h5 {
+    margin: 0;/*Taille 0*/
+    font-size: 15px;/*Taille de la police 15px*/
+}
+
+.blog-aside .latest-post-aside .lpa-title a {
+    color: black;/*Couleur noire*/
+    font-weight: 600;/*Police en gras*/
+}
+
+.blog-aside .latest-post-aside .lpa-meta a {
+    color: black !important;/*Couleur noire*/
+    font-size: 12px;/*Taille de la police*/
+    text-transform: uppercase;/*Texte en majuscule*/
+    display: inline-block;/*Type d'affichage*/
+    margin-right: 10px;/*Taille droite 10px*/
+    border-radius: 3px;/*Bordure arrondie 3px*/
+    margin-right: 4px;/*Taille droite 4px*/
+    margin-bottom: 4px;/*Taille bas 4px*/
+}
+
+.tag-cloud a {
+    padding: 4px 15px;/*Espace supplémentaire 4px 15px*/
+    font-size: 14px;/*Taille de la police 14px*/
+    color: #ffffff;/*Couleur*/
+    background: #333;/*Background couleur*/
+    border-radius: 3px;/*Bordure aroundi 3px*/
+    margin-right: 4px;/*Taille droite 4px*/
+    margin-bottom: 4px;/*Taille bas 4px*/
+}
+
+.tag-cloud a:hover {
+    background: black;/*Background noir*/
+}
+
+.blog-single {
+    padding-top: 30px;/*Espace supplémentaire haut 30px*/
+    padding-bottom: 30px;/*Espace supplémentaire bas 30px*/
+}
+
+.article {
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);/*Shadow couleur*/
+    border-radius: 5px;/*Bordure arrondie 5px*/
+    overflow: hidden;/*Overflow*/
+    background: #ffffff;/*Background blanc*/
+    padding: 15px;/*Espace supplémentaire 15px*/
+    margin: 15px 0 30px;/*Taille 15px 0 30px*/
+}
+
+.article .article-title {
+    padding: 15px 0 20px;/*Espace supplémentaire 15px 0 20px*/
+}
+
+.article .article-title h6 {
+    font-size: 14px;/*Taille de la police*/
+    font-weight: 700;/*Police en gras*/
+    margin-bottom: 20px;/*Taille bas 20px*/
+}
+
+.article .article-title h6 a {
+    text-transform: uppercase;
+    color: black;/*Couleur noire*/
+    border-bottom: 1px solid black;
+}
+
+.article .article-title h2 {
+    color: black;/*Couleur noire*/
+    font-weight: 600;/*Police en gras*/
+}
+
+.article .article-title .media {
+    padding-top: 15px;/*Espace supplémentaire haut 15px*/
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 20px;/*Espace supplémentaire bas 20px*/
+}
+
+.article .article-title .media .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;/*Overflow*/
+}
+
+.article .article-title .media .media-body {
+    padding-left: 8px;/*Espace supplémentaire a droite 8px*/
+}
+
+.article .article-title .media .media-body label {
+    font-weight: 600;/*Police en gras*/
+    color: black;/*Couleur noire*/
+    margin: 0;/*Taille 0*/
+}
+
+.article .article-title .media .media-body span {
+    display: block;
+    font-size: 12px;/*Taille de la police*/
+}
+
+.article .article-content blockquote {
+    max-width: 600px;
+    padding: 15px 0 30px 0;/*Espace supplémentaire 15px 0 30px 0*/
+    margin: 0;/*Taille 0*/
+}
+
+.article .article-content blockquote p {
+    font-size: 20px;/*Taille de la police*/
+    font-weight: 500;/*Police en gras*/
+    color: black;/*Couleur noire*/
+    margin: 0;/*Taille 0*/
+}
+
+.article .article-content blockquote .blockquote-footer {
+    color: #20247b;/*Couleur*/
+    font-size: 16px;/*Taille de la police*/
+}
+
+.article .article-content blockquote .blockquote-footer cite {
+    font-weight: 600;/*Police en gras*/
+}
+
+.article .tag-cloud {
+    padding-top: 10px;/*Taille haut 10px*/
+}
+
+/* Fin Partie secondaire (Page Articles) */
+
+/* Barre de progression */
+
+#progression {
+    background-color: black;/*Couleur du background*/
+    height: 7px;
+    width: 0;
+    position: fixed;/*Position fixe*/
+    top: 0;
+    left: 0;
+    z-index: 9999;/* Peut être important si vous avez un menu en position fixe */
+}
+
+/* Fin Barre de progression */
+
+/* Pagination des pages */
+
+.pagination {
+    background-color: #f2f2f2;/*Couleur du background*/
+}
+
+.pagination a {
+    width: 350px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #333;/*Couleur*/
+    font-size: 18px;/*Taille de la police*/
+    font-weight: 700/*Police en gras*/;
+    transition: .3s linear;
+}
+
+.pagination a:hover {
+    color: #4F646F;/*Couleur*/
+}
+
+/* Fin Pagination des pages */
+
+/* Barre news */
+
+.flash-news-banner {
+    background: #0E0E0E;
+    padding: 20px 0px;/*Espacement supplémentaire 20px 0*/
+}
+
+.flash-news-banner span {
+    font-size: 16px;/*Taille de la police*/
+    font-weight: 600;/*Police en gras*/
+    font-stretch: normal;
+    font-style: normal;/*Style de la police*/
+    line-height: 1.56;
+    letter-spacing: normal;
+    background-color: red;/*Couleur du background*/
+}
+
+/* Fin Barre news */
+
+.badge-danger {
+    color: #fff;/*Couleur*/
+    background-color: #dc3545;/*Couleur de background*/
+    padding: 12px;/*Espace supplémentaire 12px*/
+    margin-top: 10px;/*Taille haut 10px*/
+}
+
+/* Partie card articles */
+
+.card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    border: none;
+}
+
+.card .card-body {
+    padding: 19px 25px;/*Espace supplémentaire 19px 25px*/
+}
+
+.card.card-hover {
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card.card-hover:hover {
+    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+    transform: translate3d(0, -3px, 0);
+}
+
+.card .card-title {
+    font-size: 20px;/*Taille de la police*/
+    font-weight: 600;/*Police en gras*/
+    font-stretch: normal;
+    font-style: normal;/*Style de la police*/
+    line-height: 1.5;
+    letter-spacing: normal;/*Espace normal*/
+    margin-bottom: 20px;/*Taille bas 20px*/
+}
+
+/* Fin Partie card articles */
+
+.content-wrapper {
+    background: #e6e7e8;/*Couleur du background*/
+    padding: 110px 0;/*Espace supplémentaire 100px 0*/
+}
+
+.content-wrapper .banner-content {
+    position: absolute;/*Position absolue*/
+    padding: 20px 25px;/*Espace supplémentaire 20px 25px */
+    left: 0px;/*Gauche 0px*/
+    bottom: 0px;/*Bas 0px*/
+    color: #ffffff;/*Couleur*/
+}
+
+/* Titre de l'article principale */
+
+.barre-news {
+    margin-bottom: 0;/*Taille bas 0*/
+    color: white;/*Couleur blanche*/
+    font-size: 25px;/*Taille de la police*/
+    font-weight: 600;/*Police en gras*/
+}
+
+.barre-texte {
+    color: white;/*Couleur blanche*/
+    font-size: 15px;/*Taille de la police*/
+    font-weight: 600;/*Police en gras*/
+    margin-bottom: 0;/*/*Taille bas 0*/
+    text-align: justify;/*Alignement du text*/
+}
+
+/* Fin Titre de l'article principale */
+
+.grid-margin {
+    margin-bottom: 32px;/*Taille bas 32px*/
+}
+
+.stretch-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+}
+
+.stretch-card .card {
+    width: 100%;/*Longueur 100%*/
+}
+
+.content-wrapper .border-bottom-blue {
+    border-bottom: solid 1px white;/*Bordure bas 1px*/
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 24px !important;/*(Important pour avoir la priorité par rapport au bootstrap)*/
+}
+
+.pt-3, .py-3 {
+    padding-top: 16px !important;/*(Important pour avoir la priorité par rapport au bootstrap)*/
+}
+
+/* Partie des catégories / thèmes */
+
+/* Catégories Partie */
+
+.categories-partie a{
+    font-size: 16px;/*Taille de la police*/
+    font-weight: normal;/*Police en gras*/
+    font-style: normal;/*Style de la police*/
+    line-height: 1.3;/*Hauteur de la ligne 1.3*/
+    letter-spacing: normal;/*Espace normal*/
+    color: black;/*Couleur noire*/
+    padding: 10.5px 0;/*Espace supplémentaire 10.5px 0*/
+    display: block;/*Type d'affichage*/
+}
+
+.categories-partie a:hover, .categories-partie a:focus, .categories-partie li a.active {
+    text-decoration: none;/*Pas de décoration*/
+    color: #000000;/*Couleur*/
+    font-weight: 600;/*Police en gras*/
+}
+
+.categorie-item .liste-categorie-item {
+    background-color: transparent;/*Couleur du background*/
+    overflow: hidden;/*Overflow*/
+    border: 0;/*Bordure*/
+    border-radius: 0;/*Bordure arrondie 0*/
+    padding: 0 16px;/*Espace supplémentaire 0 16px*/
+    margin-bottom: 20px;/*Taille bas 20px*/
+}
+
+/* Fin Catégories Partie */
+
+/* Fin Partie des catégories / thèmes */
+
+.content-wrapper .badge-positioned {
+    position: absolute;/*Position absolue*/
+    left: 16px;/*Gauche 16px*/
+    bottom: 16px;/*Bas 16px*/
+}
+
+.survol-recent a:hover {
+    color: #4F646F !important;/*Couleur*/
+}
+
+.survol-recent {
+    color: white !important;/*Couleur blanche*/
+}
+
+.survol-article a:hover {
+    color: #4F646F !important;/*Couleur*/
+}
+
+/* Fin CSS */
+
+
+.list-group {
+    border-radius: 0;/*Bordure arondie 0*/
+}
+
+.list-group .list-group-item {
+    background-color: transparent;/*Couleurdu background*/
+    overflow: hidden;/*Overflow*/
+    border: 0;/*Bordure*/
+    border-radius: 0;/*Bordure arrondie */
+    padding: 0 16px;/*Espace supplémentaire 0 16px*/
+    margin-bottom: 20px;/*Taille bas 20px*/
+}
+
+.list-group .list-group-item .row-picture,.list-group .list-group-item .row-action-primary {
+    float: left;/*Alignement à gauche*/
+    display: inline-block;/*Type d'affichage*/
+    padding-right: 16px;/*Espace supplémentaire gauche 16px*/
+    padding-top: 8px;/*Espace supplémentaire haut 8px*/
+}
+
+.list-group .list-group-item .row-picture img,.list-group .list-group-item .row-action-primary img {
+    display: block;/*Type d'affichage*/
+    width: 56px;/*Longueur*/
+    height: 56px;/*Hauteur de 56px*/
+}
+
+.list-group .list-group-item .row-picture img,.list-group .list-group-item .row-action-primary img
+{
+    background: rgba(0, 0, 0, 0.1);/*Couleur du background*/
+    padding: 1px;/*Espace supplémentaire 1px*/
+}
+
+.list-group .list-group-item .row-picture img.circle,.list-group .list-group-item .row-action-primary img.circle {
+    border-radius: 100%;/*Bordure arrondie*/
+}
+
+.list-group .list-group-item .row-picture i,.list-group .list-group-item .row-action-primary i {
+    background: rgba(0, 0, 0, 0.25);/*Couleur du background*/
+    border-radius: 100%;/*Bordure arrondie 100%*/
+    text-align: center;/*Texte centré*/
+    line-height: 56px;/*Hauteur des lignes*/
+    font-size: 20px;/*Taille de la police*/
+    color: white;/*Couleur blanc*/
+}
+
+.list-group .list-group-item .row-picture label,.list-group .list-group-item .row-action-primary label {
+    margin-left: 7px;/*Taille droite7px*/
+    margin-right: -7px;/*Taille gauche -7px*/
+    margin-top: 5px;/*Taille haut 5px*/
+    margin-bottom: -5px;/*Taille bas -5px*/
+}
+
+.list-group .list-group-item .row-content {
+    display: inline-block;
+    width: calc(100% - 92px);
+    min-height: 66px;
+}
+
+.list-group .list-group-item .row-content .action-secondary {
+    position: absolute;/*Position absolue*/
+    right: 16px;/*Droite 16px*/
+    top: 16px;/*Haut 16px*/
+}
+
+.list-group .list-group-item .row-content .action-secondary i {
+    font-size: 20px;/*Taille de la police*/
+    color: rgba(0, 0, 0, 0.25);/*Couleur*/
+    cursor: pointer;/*Curseur*/
+}
+
+.list-group .list-group-item .row-content .action-secondary ~ * {
+    max-width: calc(100% - 30px);
+}
+
+.list-group .list-group-item .row-content .least-content {
+    position: absolute;/*Position absolue*/
+    right: 16px;/*Droite 16px*/
+    top: 0px;/*Haut 0px*/
+    color: rgba(0, 0, 0, 0.54);/*Couleur*/
+    font-size: 14px;/*Taille de la police*/
+}
+
+.list-group .list-group-item .list-group-item-heading {
+    color: rgba(0, 0, 0, 0.77);/*Couleur*/
+    font-size: 20px;/*Taille de la police*/
+    line-height: 29px;/*Hauteur des lignes*/
+}
+
+.list-group .list-group-separator {
+    clear: both;
+    overflow: hidden;/*Overflow*/
+    margin-top: 10px;/*Taille haut 10px*/
+    margin-bottom: 10px;/*Taille bas 10px*/
+}
+
+.list-group .list-group-separator:before {
+    content: "";/*Content*/
+    width: calc(100% - 90px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    float: right;/*Alignement à droite*/
+}
+
+.bg-profile {
+    background-color: #3498DB !important;/*Couleur du background*/
+    height: 150px;/*Hauteur 150px*/
+    z-index: 1;/*Z 1*/
+}
+
+.img-profile {
+    display: inline-block !important;
+    background-color: #fff;/*Couleur background blanc*/
+    border-radius: 6px;/*Bordure aroundi 6px*/
+    margin-top: -50%;/*Taille en haut -50*/
+    padding: 1px;/*Espacement supplémentaire*/
+    vertical-align: bottom;/**/
+    border: 2px solid #fff;/*Bordure blanc*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;/*Couleur blanche*/
+    z-index: 2;/*Z 2*/
+}
+
+.img-box {
+    box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+    border-radius: 2px;/*Bordure aroundi 2px*/
+    border: 0;/*Bordure 0*/
+    height: 225px;/*Hauteur 225px*/
+    width: 375px;/*Longueur 375px*/
+}
+
+.tftable
+{
+    font-size: 14px;/*Taille de la police 14*/
+    color: black;/*Couleur noire*/
+    width: 100%;/*Longueur 100%*/
+    border-width: 1px;/*Longueur bordure 1px*/
+    border-color: black;/*Couleur bordure*/
+    border-collapse: collapse;
+}
+
+.tftable th
+{
+    font-size: 14px;
+    background-color: black;/*Couleur du background*/
+    border-width: 1px;/*Taille bordure 1px*/
+    padding: 8px;/*Espace suplémentaire 8px*/
+    border-style: solid;/*Style de la bordure solid*/
+    border-color: black;/*Couleur de la bordure*/
+    text-align: left;/*Texte à gauche*/
+}
+
+.tftable tr
+{
+    background-color: white;/*Couleur du background*/
+}
+
+.tftable td
+{
+    font-size: 14px;/*Taille du texte 14px*/
+    border-width: 1px;/*Taille bordure 1px*/
+    padding: 8px;/*Espace suplémentaire 8px*/
+    border-style: solid;/*Style de la bordure solid*/
+    border-color: black;/*Couleur de la bordure*/
+}
+
+.tftable tr:hover
+{
+    background-color: #ffffff;/*Couleur du background*/
+}
+
+#team .card {
+    border: none;/*Pas de bordure*/
+    background: #f8f8f8;/*Couleur du background*/
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;/*Arrondie 4px*/
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;/*Transition 1s*/
+    transform-style: preserve-3d;
+    position: relative;/*Position relative*/
+}
+
+.frontside {
+    position: relative;/*Position relative*/
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;/*Z 2*/
+    margin-bottom: 30px;/*Taille bas 30px*/
+}
+
+.backside {
+    position: absolute;/*Position absolue*/
+    top: 0;/*Haut 0*/
+    left: 0;/*Gauche 0*/
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;/*Transition de 1s*/
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;/*Hauteur minimale 312px*/
+}
+
+.backside .card a {
+    font-size: 18px;/*Taille texte 18px*/
+    color: black !important;/*Couleur noire*/
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: black !important;/*Couleur noire*/
+}
+
+.frontside .card .card-body img {
+    width: 120px;/*Longueur 120px*/
+    height: 120px;/*Hauteur 120px*/
+    border-radius: 50%;/*Arrondie 50%*/
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 50px !important;/*Espacement supplémentaire bas 50px*/
+    padding-top: 50px !important;/*Espacement supplémentaire haut 50px*/
+}
+
+.propos-texte {
+    font-weight: 700;/*Texte en gras*/
+    color: black;/*Couleur blanche du texte*/
+    text-align: center;/*Texte centré*/
+}
+
+/* Censure */
+
+.image-cat{
+  border-radius: 10%;/*Arrondie 10%*/
+  width: 90px;/*Longueur 90px*/
+}
+
+.tete-enzo{
+  padding-top: 50px !important;/*Espacement supplémentaire haut 50px*/
+}
+.author-img{
+   width: 100px;/*Longueur 100%*/
+   margin-right: 30px;/*Taille droite 30px*/
+
+}
+
+.responsive-wrapper {
+  position: relative;/*Position relative*/
+  height: 0;/*Hauteur 0*/
+}
+
+.responsive-wrapper iframe {
+  position: absolute;/*Position absolue*/
+  top: 0;/*Haut 0*/
+  left: 0;/*Lauche 0*/
+  width: 100%;/*Longueur 100%*/
+  height: 100%;/*Hauteur 100%*/
+}
+
+#Iframe-YouTube-Life-Coach {
+  max-width: 800px;/*Longueur maximal 800px*/
+  max-height: 400px;/*Hauteur maximal 400px*/
+  overflow: hidden;/*Overflow*/
+}
+
+.responsive-wrapper-wxh-560x315 {
+  padding-bottom: 56.25%;/*Espacement supplémentaire bas 56.25%*/
+}
+
+.center-block-horiz {
+  margin-left: auto !important;/*Alignement au milieu*/
+  margin-right: auto !important;/*Alignement au milieu*/
+}
